@@ -1,0 +1,99 @@
+/* CSS for the app */
+body {
+    background-color: #000014;
+    width: 100vw;
+    height: 100vh;
+    color:white;
+}
+
+.root {
+  margin: 0 auto;
+}
+
+.binary {
+  display: flex;
+  width: 95%;
+  margin-top: 25px;
+}
+
+.base16 {
+  display: flex;
+  width: 95%;
+  margin-top: 100px;
+}
+
+#app,#binary-app {
+    font-family: sans-serif;
+    max-width: 600px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+  .input-container,.binary-input-container,
+  .output-container,.binary-output-container {
+    margin: 20px 0;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  #convert-button,#binary-convert-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #convert-button:hover,#binary-convert-button:hover {
+    background-color: #666;
+  }
+  
+  /* CSS for the app */
+#app-ascii-to-base16,#app-base16-to-ascii {
+    font-family: sans-serif;
+    max-width: 600px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .input-container-ascii-to-base16,
+  .output-container-ascii-to-base16,
+  .input-container-base16-to-ascii,
+  .output-container-base16-to-ascii {
+    margin: 20px 0;
+  }
+  
+  #convert-button-ascii-to-base16,#convert-button-base16-to-ascii {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #convert-button-ascii-to-base16:hover,#convert-button-base16-to-ascii:hover {
+    background-color: #666;
+  }
+  
+  #output-text,#binary-output-text,#output-text-ascii-to-base16,#output-text-base16-to-ascii {
+    background-color:#05050c;
+    border:1px solid #242424;
+    color:white;
+  }
+  

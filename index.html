@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>ASCII Converter</title>
+</head>
+<body>
+  
+<div class="root">
+<div class="binary">
+<div id="app">
+    <h1>ASCII to Binary Converter</h1>
+    <div class="input-container">
+      <textarea id="input-text" placeholder="Enter ASCII text here"></textarea>
+      <button id="convert-button">Convert</button>
+    </div>
+    <div class="output-container">
+      <textarea id="output-text" placeholder="Binary output will appear here"></textarea>
+    </div>
+  </div>
+  <br>
+<div id="binary-app">
+    <h1>Binary to ASCII Converter</h1>
+    <div class="binary-input-container">
+      <textarea id="binary-input-text" placeholder="Enter binary here"></textarea>
+      <button id="binary-convert-button">Convert</button>
+    </div>
+    <div class="binary-output-container">
+      <textarea id="binary-output-text" placeholder="ASCII output will appear here"></textarea>
+    </div>
+  </div>
+  <br>
+</div>
+<div class="base16">
+<div id="app-ascii-to-base16">
+    <h1>ASCII to Base16 Converter</h1>
+    <div class="input-container-ascii-to-base16">
+      <textarea id="input-text-ascii-to-base16" placeholder="Enter ASCII here"></textarea>
+      <button id="convert-button-ascii-to-base16">Convert</button>
+    </div>
+    <div class="output-container-ascii-to-base16">
+      <textarea id="output-text-ascii-to-base16" placeholder="Base16 output will appear here"></textarea>
+    </div>
+  </div>
+  <br>
+
+<div id="app-base16-to-ascii">
+    <h1>Base16 to ASCII Converter</h1>
+    <div class="input-container-base16-to-ascii">
+      <textarea id="input-text-base16-to-ascii" placeholder="Enter base16 here"></textarea>
+      <button id="convert-button-base16-to-ascii">Convert</button>
+    </div>
+    <div class="output-container-base16-to-ascii">
+      <textarea id="output-text-base16-to-ascii" placeholder="ASCII output will appear here"></textarea>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="./asciiConvert.js"></script>  
+<script src="./binaryConvert.js"></script>
+<script src="./asciiB16.js"></script>
+<script src="./base16Ascii.js"></script>
+</body>
+</html>
