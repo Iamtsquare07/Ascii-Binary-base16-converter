@@ -1,41 +1,60 @@
 /* CSS for the app */
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
 body {
+    padding: 10px;
     background-color: #000014;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    color:white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(255, 217, 0, 0.61);
+    font-family: 'Croissant One', cursive;
+}
+
+h2 {
+    color: rgba(255, 217, 0, 0.61);
+    font-family: 'Croissant One', cursive;
 }
 
 .root {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .binary {
-  display: flex;
-  width: 95%;
-  margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 25px;
 }
 
 .base16 {
-  display: flex;
-  width: 95%;
-  margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 100px;
 }
 
-#app,#binary-app {
+#app,
+#binary-app {
     font-family: sans-serif;
-    max-width: 600px;
-    width: 50%;
+    max-width: 500px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
-  
-  .input-container,.binary-input-container,
-  .output-container,.binary-output-container {
+
+.input-container,
+.binary-input-container,
+.output-container,
+.binary-output-container {
     margin: 20px 0;
-  }
-  
-  textarea {
+}
+
+textarea {
     width: 100%;
     height: 150px;
     padding: 10px;
@@ -43,9 +62,10 @@ body {
     border-radius: 5px;
     font-size: 16px;
     resize: none;
-  }
-  
-  #convert-button,#binary-convert-button {
+}
+
+#convert-button,
+#binary-convert-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #333;
@@ -54,29 +74,31 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  #convert-button:hover,#binary-convert-button:hover {
+}
+
+#convert-button:hover,
+#binary-convert-button:hover {
     background-color: #666;
-  }
-  
-  /* CSS for the app */
-#app-ascii-to-base16,#app-base16-to-ascii {
+}
+
+#app-ascii-to-base16,
+#app-base16-to-ascii {
     font-family: sans-serif;
-    max-width: 600px;
-    width: 50%;
+    max-width: 500px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  .input-container-ascii-to-base16,
-  .output-container-ascii-to-base16,
-  .input-container-base16-to-ascii,
-  .output-container-base16-to-ascii {
+}
+
+.input-container-ascii-to-base16,
+.output-container-ascii-to-base16,
+.input-container-base16-to-ascii,
+.output-container-base16-to-ascii {
     margin: 20px 0;
-  }
-  
-  #convert-button-ascii-to-base16,#convert-button-base16-to-ascii {
+}
+
+#convert-button-ascii-to-base16,
+#convert-button-base16-to-ascii {
     display: inline-block;
     padding: 10px 20px;
     background-color: #333;
@@ -85,15 +107,40 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  #convert-button-ascii-to-base16:hover,#convert-button-base16-to-ascii:hover {
+}
+
+#convert-button-ascii-to-base16:hover,
+#convert-button-base16-to-ascii:hover {
     background-color: #666;
-  }
-  
-  #output-text,#binary-output-text,#output-text-ascii-to-base16,#output-text-base16-to-ascii {
-    background-color:#05050c;
-    border:1px solid #242424;
-    color:white;
-  }
-  
+}
+
+#output-text,
+#binary-output-text,
+#output-text-ascii-to-base16,
+#output-text-base16-to-ascii {
+    background-color: #05050c;
+    border: 1px solid #242424;
+    color: white;
+}
+
+@media only screen and (min-width: 1024px){
+    .binary {
+       flex-direction: row;
+    }
+    
+    .base16 {
+        flex-direction: row;
+    }
+
+    #app-ascii-to-base16,
+    #app-base16-to-ascii {
+        max-width: 600px;
+        width: 50%;
+    }
+
+    #app,
+    #binary-app {
+        max-width: 600px;
+        width: 50%;
+    }
+}
